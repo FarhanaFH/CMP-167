@@ -1,8 +1,8 @@
 /*
- * Name: Farhana Hussen
+ * Name: Farhana 
  * CMP 167
  * Zybook final
- * Professor: STEVEN FULAKEZA
+ * Professor: 
  */
 
 import java.util.Scanner;
