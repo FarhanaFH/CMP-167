@@ -1,8 +1,8 @@
-/*Name: Farhana Hussen
+/*Name: Farhana
  *Description: Program with a loop that iterates as long as an int variable called  num is less or equal to 50.
  *Date created: March 22, 2023
 *Date modified: March 23, 2023
-*Email: itzthelion@gmail.com
+*Email: 
  */
 import java.util.Scanner;
 public class FirstLoop {
