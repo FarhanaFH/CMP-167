@@ -1,10 +1,10 @@
 /*
- *  Name: Farhana Hussen
+ *  Name: 
  *  Project 1 Mycalculator
  *  date created: 3/26/23
  *  date modified: 4/4/23
  *  Video link: 
- *  email: itzthelion@gmail.com
+ *
  */
 
 import java.util.Scanner;
