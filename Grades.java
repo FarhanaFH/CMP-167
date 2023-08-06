@@ -1,9 +1,9 @@
 /*
- *  Name: Farhana Hussen
+ *  Name: 
  *  Description: HW 7
  *  Date Created: 
  *  Date Modified: 
- *  Email: farhana.hussen@lc.cuny.edu
+ *  Email: 
  */
 
 import java.util.Scanner;
