@@ -1,7 +1,7 @@
 /*
- * Name: Farhana Hussen
+ * Name: Farhana 
  * CMP 167
- * Professor: STEVEN FULAKEZA
+ * Professor: 
  */
 
 import java.util.Scanner;
