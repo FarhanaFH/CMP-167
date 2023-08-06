@@ -1,8 +1,8 @@
 /*
- * Name: Farhana Hussen
+ * Name: Farhana
  * Problem3
  * CMP 167 
- * Professor: STEVEN FULAKEZA
+ * Professor: 
  */
 public class Problem3
 {
