@@ -1,8 +1,8 @@
 /*
- * Name: Farhana Hussen
+ * Name: Farhana 
  * CMP 167
  * MidtermProblems 1
- * Professor: STEVEN FULAKEZA
+ * Professor: 
  */
 public class MidtermProblems {
 
