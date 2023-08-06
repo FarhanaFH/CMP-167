@@ -1,6 +1,6 @@
 /*
- *  Name: Farhana Hussen
- *  Email: farhana.hussen@lc.cuny.edu
+ *  Name: Farhana 
+ *  Email: 
  */
 
 public class Homework6Methods {
