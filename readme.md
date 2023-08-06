@@ -1,77 +1,69 @@
-# method: a block of code to specifically execute one task, it helps to promote reusing of code, Once created it can be called anywhere in the code
-
-##Syntax of method definition:
-	accessModifier staticOrNot dataTypeofReturnValue nameofMethod { parameterList } ExceptionList
-	{
-		Body
-	}
+# Decision Branching 
+## if statement 
+	if ( condition1 )(
+	    statement1 
+    } 
+## condition :  Any expression that can only evaluate to true or false
+## Example
+	true
+	false
 	
--	**accessModifier**: public, private, protected, default or package
--	**staticOrNot**: The static elements will belong to the class and not to the instance. Static elements such as methods and variables will be able to access without creating objects.
--	**dataTypeofReturnValue**: If it doesn't anything it will be set as void
--	**nameofMethod**: it should starts with letters, _, $
--	**parameterList**: Declaration of variables that will be used to execute the tasks, these or parameters are assigned a value at the moment the method called
--	**ExceptionList** Set Exception classes that will be triggered will be triggered when an unexpected error occurs. (optional) 
--	**body**: Surrounded by curly braces, contains set of statements to executes a task. (required)
-
-
-
+## comparison operators 
+	inequality
+	>		  greater than 
+	<		  less than
+	>=		  greater than or equals to 
+	<= 		  less than or equals to
+	equality 
+	==		  equals to 
+	!=		  not equals to
+## Example: m = 5, n = 6
+	m > n	 false
+	m < n 	 true
+	m == n   false
+	
+## logicals Operators
+	&&		and
+	||		or 
+	!		not
+	
 ## Example:
-
-	public static int sum(int a,int b; //Declaration of a method, abstract method, because no body has been defined
+	{(m > n) || (m < n)}		true
+	{(m > n) && (m < n)}		false
+	!(m > n)					true
 	
-	public static int product(int x, int y)// method Definition, Concrete method, because a body has been defined
-	{
-		return x*y;
+	
+## Bitwise Operators
+	&		and 
+	|		or 
+	^		exclusive or 
+	
+	decimal 	binary
+	0				  0
+	1 				  1
+	2 				 10
+	3 				 11
+	4				 100
+	5 				 101
+	6 				 110
+	7 				 111
+	8				 1000 
+	
+	
+	10 & 11 =10
+	10 | 11 =11
+	10 ^ 11 =01
+	
+	
+## else if (condition): precedes the if, and it cannot stand by itself 
+## else:  precedes if statement and it cannot stand by itself 
+
+	if (condition1){
+	    statement1
+	}  
+	else{
+		statements2
 	}
-	
-	public static int sumAll (int n, int m)
-	{
-		int sum = 0;
-		for{int i =n; i<=m; i++}
-	}	
-		sum += n;
-		}
-		return sum;
-	}
-	
-	public static void main (string {} args ) // main method 
-	{
-	
-	
-	}
-	private static void greet(){
-		System.out.printLn("Hello");
-		}
-		
-# method Signature: nameOfMethod(dataTypes of parameters)
-
-# Method Call
-##Syntax:
-	nameofMethod(ArgumentList);
-	
-_ **ArgumentList**: values that will be assigned to the parameterList
-
-## Semantics:
--	Hold a space in memory and give it as name the method call
--	Search for a method definition that matches the method signature of the method call
--	If a match is found, assign the argument 
-if there is a return statement, evaluate the expression and replace the method call with the resultant value, end the method call, free the space in memory
--		if not return statement, end method call
--	if a match is not found, an error will occur, resulting in either not compiling 
-
-## example:
-	greet();
-	int total = sumAll(10, 20);
-	int p	   = product (3,5):
-	int total2= sumAll ("4", 5);//Error, no match found
-	
-#Return Statement
-
-##Syntax:
-	return expression;
-## Semantics:
--	Evaluate the expression
--	Replace the method call with the resultant value 
--	find the method call
-
+	else{
+		statements3		 
+	} 
