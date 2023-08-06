@@ -1,9 +1,9 @@
 /*
- * Name: Farhana Hussen
+ * Name: Farhana
  * PromptBank
  * CMP 167
- * Professor: STEVEN FULAKEZA
- * link: https://youtu.be/RgbcIZpwlMI
+ * Professor: 
+ * link: 
  */
 
 import java.util.Random;
