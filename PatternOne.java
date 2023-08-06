@@ -1,8 +1,8 @@
-/*Name: Farhana Hussen
+/*Name: Farhana
  *Description:  program named CircleSphere that prompts the user for a double value representing a radius. 
  *Date created: March 22, 2023
 *Date modified: March 23, 2023
-*Email: itzthelion@gmail.com
+*Email: 
  */
 
 import java.util.Scanner;
