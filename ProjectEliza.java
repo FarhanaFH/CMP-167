@@ -1,9 +1,9 @@
 /*
- * Farhana Hussen
+ * Farhana 
  * PROJECT ELIZA
  * CMP 167
- * Professor: STEVEN FULAKEZA
- * YouTube Link: https://youtu.be/RgbcIZpwlMI
+ * Professor: 
+ * YouTube Link: 
  */
 
 import java.util.Random;
