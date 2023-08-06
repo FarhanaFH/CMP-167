@@ -1,8 +1,8 @@
-/*Name: Farhana Hussen
+/*Name: Farhana 
  *Description: program that reads a list of exam grades entered as int's in the range of 0 to 100
  *Date created: March 22, 2023
 *Date modified: March 23, 2023
-*Email: itzthelion@gmail.com
+*Email: 
  */
 
 import java.util.ArrayList;  
