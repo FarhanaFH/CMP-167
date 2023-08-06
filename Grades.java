@@ -1,379 +1,95 @@
-/*
- *  Name: 
- *  Description: HW 7
- *  Date Created: 
- *  Date Modified: 
- *  Email: 
+/*Name: Farhana Hussen
+ *Description: program that reads a list of exam grades entered as int's in the range of 0 to 100
+ *Date created: March 22, 2023
+*Date modified: March 23, 2023
+*Email: itzthelion@gmail.com
  */
 
-import java.util.Scanner;
-
-public class Grades{
-
-
-public static int readGrades(int[] grades)
-
+import java.util.ArrayList;  
+import java.util.Scanner; 
+public class Grades
 {
+public static void main(String[] args) {	
+ArrayList<Integer> list_grade = new ArrayList<>(); 
+int[] count_grade = new int[10];
+int grade;
+Scanner scan = new Scanner(System.in);
 
-Scanner scnr = new Scanner(System.in);
-
-System.out.println("Enter a grade : ");
-
-int a = scnr.nextInt();
-
-int i = 1;
-
-while(a != -1)
-
+ while(true)
 {
+ System.out.println("Enter a grade: "); 
+ grade = scan.nextInt();
 
-grades[i] = a;
+ if (grade < 0)
 
-i = i + 1;
+ break;
 
-System.out.println("Enter a grade : ");
+list_grade.add(grade); }
 
-a = scnr.nextInt();
+for (int i = 0; i < list_grade.size();i++) {
+	
+grade = list_grade.get(i);
 
+ if(grade >= 93 && grade <= 100)
+
+ count_grade[0] += 1;
+
+ else if( grade >= 90 && grade < 93)
+
+count_grade[1] += 1;
+
+ else if( grade >= 87 && grade < 90)
+
+count_grade[2] += 1;
+
+ else if( grade >= 83 && grade < 87)
+
+count_grade[3] += 1;
+
+else if( grade >= 80 && grade < 83)
+
+ count_grade[4] += 1;
+
+else if( grade >= 77 && grade < 80)
+
+ count_grade[5] += 1;
+
+ else if( grade >= 73 && grade <77)
+
+count_grade [6] += 1;
+
+ else if( grade >= 70 && grade <73)
+
+ count_grade [7] += 1;
+
+else if(grade >= 60 && grade < 70)
+
+count_grade [8] += 1;
+ else
+count_grade [9] += 1;
 }
+ System.out.println("Total number of grades = " + list_grade.size());
 
+System.out.println("Number of A's  = " + count_grade[0]);
 
-return i;
+System.out.println("Number of A-'s = " + count_grade[1]);
 
-}
+System.out.println("Number of B+'s = " + count_grade[2]);
 
-public static int sum(int [] arr)
+System.out.println("Number of B's  = " + count_grade[3]);
 
-{
+System.out.println("Number of B-'s = " + count_grade[4]);
 
-int sum = 0;
+System.out.println("Number of C+'s = " + count_grade[5]);
 
-for(int i = 0; i < arr.length; i++)
+System.out.println("Number of C's  = " + count_grade[6]);
 
-{
+System.out.println("Number of C-'s = " + count_grade[7]) ;
 
-sum += arr[i];
+System.out.println("Number of D's  = " + count_grade[8]) ;
 
-}
-
-return sum;
-
-}
-
-public static int sum(int [] arr, int firstIndex, int lastIndex)
-
-{
-
-if(firstIndex < 0 || lastIndex >= arr.length || firstIndex > lastIndex)
-
-return -666;
-
-int sum = 0;
-
-for(int i = firstIndex; i <= lastIndex; i++)
-
-{
-
-sum += arr[i];
-
-
-}
-
-return sum;
-
-}
-
-public static int maxValue(int[] arr, int firstIndex, int lastIndex)
-
-{
-
-if(firstIndex < 0 || lastIndex >= arr.length || firstIndex > lastIndex)
-
-return -666;
-
-int max = arr[firstIndex];
-
-for(int i = firstIndex + 1; i <= lastIndex; i++)
-
-{
-
-if(max < arr[i])
-
-max = arr[i];
-
-}
-
-return max;
-
-}
-
-public static int maxValue(int [] grades)
-
-{
-
-int max = grades[0];
-
-for(int i=1; i < grades.length; i++)
-
-{
-
-if(max < grades[i])
-
-max = grades[i];
-
-}
-
-return max;
-
-}
-
-public static int minValue(int [] grades)
-
-{
-
-int min = grades[0];
-
-for(int i = 1; i < grades.length; i++)
-
-{
-
-if(min > grades[i])
-
-min = grades[i];
-
-}
-
-return min;
-
-}
-
-public static int minValue(int [] arr, int firstIndex, int lastIndex)
-
-{
-
-if(firstIndex < 0 || lastIndex >= arr.length || firstIndex > lastIndex)
-
-return -666;
-
-int min = arr[firstIndex];
-
-for(int i = firstIndex + 1; i <= lastIndex; i++)
-
-{
-
-if(min > arr[i])
-
-min = arr[i];
-
-}
-
-return min;
-
-}
-
-public static int indexOfFirstMinValue(int [] arr)
-
-{
-
-int min = arr[0];
-
-int index = 0;
-
-for(int i = 1; i < arr.length; i++)
-
-{
-
-if(min > arr[i])
-
-{min = arr[i]; index = i;}
-
-}
-
-return index;
-
-}
-
-public static int indexOfFirstMaxValue(int [] arr)
-
-{
-
-int max = arr[0];
-
-int index = 0;
-
-for(int i = 1; i < arr.length; i++)
-
-{
-
-if(max < arr[i])
-
-{max = arr[i]; index = i;}
-
-}
-
-return index;
-
-}
-
-public static double average(int [] arr)
-
-{
-
-double sum = sum(arr);
-
-return sum / arr.length;
-
-}
-
-
-public static int numberOfBelowAverageElements(int [] arr)
-
-{
-
-double val = average(arr);
-
-int count = 0;
-
-for(int i = 0; i < arr.length; i++)
-
-{
-
-if(arr[i] < val)
-
-count++;
-
-}
-
-return count;
-
-}
-
-
-public static int numberOfAboveAverageElements(int [] arr)
-
-{
-
-double val = average(arr);
-
-int count = 0;
-
-for(int i = 0; i < arr.length; i++)
-
-{
-
-if(arr[i] > val)
-
-count++;
-
-}
-
-return count;
-
-}
-
-
-public static void rotateElements(int [] arr)
-
-{
-
-int len = arr.length - 1;
-
-int val = arr[len];
-
-for(int i = len-1; i >= 0; i--)
-
-{
-
-arr[i + 1]= arr[i];
-
-}
-
-arr[0] = val;
-
-}
-
-public static void rotateElements(int [] arr, int rotationCount)
-
-{
-
-for(int i = 1; i < rotationCount; i++)
-
-{
-
-rotateElements(arr);
+System.out.println("Number of F's  = " + count_grade[9]) ;
 
 
 }
-
-}
-
-
-public static void reverseArray(int [] arr)
-
-{
-
-int i, k, t;
-
-int n = arr.length;
-
-for (i = 0; i < n / 2; i++) {
-
-t = arr[i];
-
-arr[i] = arr[n - i - 1];
-
-arr[n - i - 1] = t;
-
-}
-
-}
-
-
-public static void main(String[] args) {
-
-Scanner in = new Scanner(System.in);
-
-System.out.println("Enter a grade : ");
-
-int a = in.nextInt();
-
-while(a != -1){
-
-int [] grad = new int[50];
-
-grad[0] = a;
-
-int count = readGrades(grad);
-
-int [] grades = new int[count];
-
-for(int i = 0; i < count; i++)
-
-{
-
-grades[i] = grad[i];
-
-}
-
-System.out.println("Number Of Grades = " + count);
-
-
-int max = maxValue(grades);
-
-System.out.println("Maximum Grade = " + max);
-
-
-int min = minValue(grades);
-
-System.out.println("Minimum Grade = " + min);
-
-System.out.println("Enter a grade : ");
-
-a = in.nextInt();
-
-
-}
-
-}
-
 }
